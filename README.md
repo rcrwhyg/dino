@@ -1,1 +1,1 @@
-dino
+deno deploy

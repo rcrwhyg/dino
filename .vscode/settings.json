@@ -1,7 +1,15 @@
 {
-    "cSpell.words": [
-        "Alykiotis",
-        "Iife",
-        "ureq"
-    ]
+  "cSpell.words": [
+    "Alykiotis",
+    "askama",
+    "debouncer",
+    "dialoguer",
+    "idents",
+    "Iife",
+    "indexmap",
+    "matchit",
+    "pointee",
+    "rquickjs",
+    "ureq"
+  ]
 }

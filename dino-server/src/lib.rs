@@ -78,6 +78,8 @@ async fn handler(
     // convert request data into Req and call handler with a js runtime
     let req = assemble_req(&matched, &parts, query, body)?;
     let handler = matched.value;
+    // TODO: build a JsWorker pool, and send req via mpsc channel and get res from oneshot channel
+    // but if code changed we need to recreate the pool
     let worker = JsWorker::try_new(&router.code)?;
     let res = worker.run(handler, req)?;
     // convert Req data into Res and return it
